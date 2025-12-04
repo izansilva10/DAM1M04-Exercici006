@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Formulari</title>
+  <link rel="stylesheet" href="estils.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+
+<body id="pagina-formulari">
+
+<header class="navbar">
+  <nav class="nav-container">
+      <a href="index.html" class="nav-logo"></a>
+      <ul class="nav-links">
+          <li><a href="index.html">Formulari</a></li>
+          <li><a href="interaccio.html">Interacció</a></li>
+      </ul>
+  </nav>
+</header>
+
+
+<main class="container">
+
+  <h1>Formulari d'exemple</h1>
+
+  <form>
+
+    <!-- NOM COMPLET -->
+    <label>
+      Nom complet
+      <input type="text" name="nom" required
+        pattern="[A-Za-zÀ-ÿ\s]{3,40}"
+        title="Introdueix només lletres. Mínim 3 caràcters.">
+    </label>
+
+    <!-- EMAIL -->
+    <label>
+      Correu electrònic
+      <input type="email" name="email" required>
+    </label>
+
+    <!-- TELÈFON -->
+    <label>
+      Telèfon
+      <input type="tel" name="tel"
+        pattern="[0-9]{9}"
+        title="Introdueix un telèfon de 9 dígits">
+    </label>
+
+    <!-- EDAT -->
+    <label>
+      Edat
+      <input type="number" min="1" max="120" step="1">
+    </label>
+
+    <!-- DATA NAIXEMENT -->
+    <label>
+      Data de naixement
+      <input type="date">
+    </label>
+
+    <!-- FRANJA HORÀRIA -->
+    <label>
+      Horari preferit
+      <input type="time">
+    </label>
+
+    <!-- COLOR -->
+    <label>
+      Color preferit
+      <input type="color">
+    </label>
+
+    <!-- RANGE -->
+    <label>
+      Intensitat
+      <input type="range" min="0" max="100" value="50">
+    </label>
+
+    <!-- CHECKBOX -->
+    <fieldset>
+      <legend>Aficions</legend>
+      <label><input type="checkbox" name="aficions"> Música</label>
+      <label><input type="checkbox" name="aficions"> Cinema</label>
+      <label><input type="checkbox" name="aficions"> Esport</label>
+    </fieldset>
+
+    <!-- RADIO -->
+    <fieldset>
+      <legend>Nivell d’estudis</legend>
+      <label><input type="radio" name="estudis"> Primària</label>
+      <label><input type="radio" name="estudis"> Secundària</label>
+      <label><input type="radio" name="estudis"> Universitat</label>
+    </fieldset>
+
+    <!-- SELECT -->
+    <label>
+      País
+      <select>
+        <option>Espanya</option>
+        <option>França</option>
+        <option>Alemanya</option>
+      </select>
+    </label>
+
+    <!-- TEXTAREA -->
+    <label>
+      Comentaris
+      <textarea rows="4"></textarea>
+    </label>
+
+    <!-- BOTONS -->
+    <div class="form-buttons">
+      <button type="submit">Enviar</button>
+      <button type="reset">Esborrar</button>
+    </div>
+
+  </form>
+
+</main>
+
+</body>
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Interacció</title>
+  <link rel="stylesheet" href="estils.css">
+</head>
+
+<body id="pagina-interaccio">
+
+<header class="navbar">
+
+  <!-- CHECKBOX ocult per al toggle mòbil -->
+  <input type="checkbox" id="menu-toggle">
+
+  <label class="menu-icon" for="menu-toggle">☰</label>
+
+  <header class="navbar">
+  <nav class="nav-container">
+      <a href="index.html" class="nav-logo"></a>
+      <ul class="nav-links">
+          <li><a href="index.html">Formulari</a></li>
+          <li><a href="interaccio.html">Interacció</a></li>
+      </ul>
+  </nav>
+</header>
+
+
+<main class="container">
+
+  <h1>Interacció sense JavaScript</h1>
+
+  <!-- ⭐ PESTANYES -->
+  <div class="tabs">
+
+    <input type="radio" name="tab" id="tab1" checked>
+    <label for="tab1">Pestanya 1</label>
+
+    <input type="radio" name="tab" id="tab2">
+    <label for="tab2">Pestanya 2</label>
+
+    <section class="content content-1">
+      <p>Contingut de la pestanya 1</p>
+    </section>
+
+    <section class="content content-2">
+      <p>Contingut de la pestanya 2</p>
+    </section>
+
+  </div>
+
+  <!-- ⭐ COMPONENT EXTRA: Flip Card -->
+  <!-- ⭐ COMPONENT EXTRA: Flip Card -->
+<div class="flip-card">
+
+  <input type="checkbox" id="flip">
+
+  <label for="flip" class="flip-card-inner">
+    <div class="front">
+      <img src="assets/img/front.jpg" alt="Front image">
+    </div>
+
+    <div class="back">
+      <img src="assets/img/back.jpg" alt="Back image">
+    </div>
+  </label>
+
+</div>
+
+
+</main>
+
+</body>
+</html>
